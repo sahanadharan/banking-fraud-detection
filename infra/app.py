@@ -12,7 +12,7 @@ FraudDetectionStack(
     "BankingFraudDetectionStack",
     env=cdk.Environment(
         account=os.getenv("CDK_DEFAULT_ACCOUNT"),
-        region=os.getenv("CDK_DEFAULT_REGION", "ca-central-1"),
+        region=os.getenv("CDK_DEFAULT_REGION", "us-east-2"),
     ),
     description="Banking fraud detection: ECS Fargate API, SQS, Lambda, DynamoDB, SNS",
 )

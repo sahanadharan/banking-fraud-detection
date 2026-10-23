@@ -94,7 +94,7 @@ tests/                pytest suite (rules, API, Lambda)
 ## Deploying
 
 ### Prerequisites
-- AWS account and an IAM user with access keys (`aws configure`, region `ca-central-1`)
+- AWS account and an IAM user with access keys (`aws configure`, region `us-east-2`)
 - Python 3.12, Node.js (for the CDK CLI), Docker Desktop **running**, Git
 - CDK CLI: `npm install -g aws-cdk`
 
@@ -116,8 +116,8 @@ cdk deploy -c alert_email=you@example.com
 When it finishes, CDK prints the outputs, including:
 
 ```
-BankingFraudDetectionStack.ApiUrl     = http://Banki-Trans-xxxx.ca-central-1.elb.amazonaws.com
-BankingFraudDetectionStack.ApiDocsUrl = http://Banki-Trans-xxxx.ca-central-1.elb.amazonaws.com/docs
+BankingFraudDetectionStack.ApiUrl     = http://Banki-Trans-xxxx.us-east-2.elb.amazonaws.com
+BankingFraudDetectionStack.ApiDocsUrl = http://Banki-Trans-xxxx.us-east-2.elb.amazonaws.com/docs
 ```
 
 **Confirm the SNS email subscriptions.** AWS sends two "Subscription Confirmation" emails (customer alerts and ops alarms). Click the link in each one, or no alerts will arrive.
