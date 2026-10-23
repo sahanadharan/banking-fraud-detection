@@ -1,0 +1,13 @@
+{
+  "app": "python app.py",
+  "watch": {
+    "include": ["**"],
+    "exclude": ["README.md", "cdk*.json", "requirements*.txt", "**/__pycache__", ".venv"]
+  },
+  "context": {
+    "alert_email": "",
+    "enable_firehose": "false",
+    "fraud_alarm_threshold": 10,
+    "demo_password": "Demo@1234"
+  }
+}

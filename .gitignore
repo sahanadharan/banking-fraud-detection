@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+
+# CDK
+infra/cdk.out/
+infra/cdk.context.json
+*.swp
+
+# Secrets - never commit these
+.env
+*.pem
+credentials*
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
